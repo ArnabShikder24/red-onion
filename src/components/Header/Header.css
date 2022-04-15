@@ -1,0 +1,43 @@
+.header {
+    background-image: url('../../images/bannerbackground.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+}
+.header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    text-align: center;
+}
+.header .header-content .header-info {
+    position: relative;
+}
+.header .header-content .header-info h1{
+    color: #2e2525;
+}
+.header .header-content .header-info input {
+    width: 75%;
+    height: 29px;
+    border: none;
+    border-radius: 15px;
+    padding: 3px 10px;
+    color: #2e2525;
+}
+.header .header-content .header-info button {
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    background-color: crimson;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    position: absolute;
+    right: 50px;
+}
+
+.header .header-content .header-info button:hover {
+    color: #ffffff;
+    background-color: rgb(255, 0, 51);
+}

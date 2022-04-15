@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.navbar img {
+    width: 140px;
+}
+.navbar a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    transition: all .3s ease-in;
+}
+.navbar a:hover {
+    color: rgb(255, 0, 51);
+}
+.navbar .signUp {
+    background-color: crimson;
+    color: #ffffff;
+    padding: 4px 13px;
+    border-radius: 15px;
+    transition: all .3s ease-in;
+}
+.navbar .signUp:hover {
+    color: #ffffff;
+    background-color: rgb(255, 0, 51);
+}
