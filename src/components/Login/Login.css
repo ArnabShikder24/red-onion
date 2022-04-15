@@ -1,0 +1,25 @@
+.form .input-group {
+    margin-bottom: 30px;
+}
+.form .input-group input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 8px;
+    background-color: rgb(238, 239, 240);
+}
+input[type = submit] {
+    width: 465px;
+    height: 40px;
+    background-color: crimson;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 0;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+.create {
+    text-decoration: none;
+    color: rgb(20, 154, 199);
+}

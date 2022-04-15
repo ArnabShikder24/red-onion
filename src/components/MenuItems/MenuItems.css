@@ -1,0 +1,37 @@
+.menuItem {
+    margin-bottom: 50px;
+}
+.menuItem .link-item {
+    text-align: center;
+    margin: 50px 0;
+}
+.menuItem .link-item a {
+    text-decoration: none;
+    color: black;
+    transition: all .1 ease;
+    font-weight: 500;
+}
+.menuItem .link-item a:nth-child(2) {
+    margin: 0 20px;
+}
+.menuItem .link-item a:hover {
+    color: crimson;
+    border-bottom: 2px solid crimson;
+}
+.btn-cover {
+    text-align: center;
+}
+.check-btn {
+    background-color: crimson;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: 0;
+    transition: all .3s ease-in;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.check-btn:hover {
+    color: #ffffff;
+    background-color: rgb(255, 0, 51);
+}

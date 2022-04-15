@@ -6,8 +6,9 @@ import logo2 from '../../images/logo2.png'
 const Navbar = () => {
     return (
         <nav className='navbar'>
-            <img src={logo2} alt="logo" />
+            <Link to='/'><img src={logo2} alt="logo" /></Link>
             <div>
+                <Link to='/'>Home</Link>
                 <Link to='/cart'>Cart</Link>
                 <Link to='/login'>Login</Link>
                 <Link className='signUp' to='/signup'>Sign Up</Link>

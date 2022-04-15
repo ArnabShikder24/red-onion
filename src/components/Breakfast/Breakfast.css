@@ -1,0 +1,26 @@
+.food-flex {
+    display: flex;
+    justify-content: center;
+}
+.foods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.food-item {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    line-height: 10px;
+}
+.food-item img {
+    width: 100%;
+}
+.food-item p {
+    color: rgb(133, 138, 138);
+}
+.food-item:hover {
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+}
