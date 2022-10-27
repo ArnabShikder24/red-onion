@@ -17,6 +17,10 @@
 .navbar a:hover {
     color: rgb(255, 0, 51);
 }
+.nav-item {
+    display: flex;
+    align-items: center;
+}
 .navbar .signUp {
     background-color: crimson;
     color: #ffffff;
@@ -25,6 +29,20 @@
     transition: all .3s ease-in;
 }
 .navbar .signUp:hover {
+    color: #ffffff;
+    background-color: rgb(255, 0, 51);
+}
+.logout {
+    background-color: crimson;
+    color: #ffffff;
+    padding: 6px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    transition: all .3s ease-in;
+}
+.logout:hover {
     color: #ffffff;
     background-color: rgb(255, 0, 51);
 }

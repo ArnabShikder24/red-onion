@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
 import './Login.css'
 
 const Login = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
+
+    const handleLogin = e => {
+        e.preventDefault();
+        signInWithEmailAndPassword(email, password);
+    }
+
     return (
         <div className='food-flex '>
             <div className='form'>
                 <h2>Login</h2>
-                <form>
+                <form onSubmit={handleLogin}>
                     <div className="input-group">
-                        <input type="email" placeholder='Your Email' required/>
+                        <input onBlur={e => setEmail(e.target.value)} type="email" placeholder='Your Email' required/>
                     </div>
                     <div className="input-group">
-                        <input type="password" placeholder='Your Password' required/>
+                        <input onBlur={e => setPassword(e.target.value)} type="password" placeholder='Your Password' required/>
                     </div>
                     <input type="submit" value="Login" />
                 </form>
